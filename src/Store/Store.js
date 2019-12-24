@@ -1,11 +1,11 @@
 
-import { createStore } from 'redux';
-import { CounterReducer } from 'Store';
+import { createStore, combineReducers } from 'redux';
+import { CounterReducer, PersonReducer } from 'Store';
 
 const store = createStore(
-    // combineReducers({
-    CounterReducer
-    // })
+    combineReducers({
+        Counter: CounterReducer,
+        Persons: PersonReducer
+    })
 );
-
 export { store };

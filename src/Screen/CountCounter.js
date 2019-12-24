@@ -3,7 +3,7 @@ import { View, Text, Button, TextInput } from 'react-native'
 import { connect } from "react-redux";
 
 let CountCounter = (props) => {
-    console.log(props)
+   
     const [inputCount, setInputCount] = useState(0)
 
     const addOne = () => {
@@ -59,7 +59,7 @@ let CountCounter = (props) => {
 }
 const mapStateToProps = (state) => {
     return {
-        count: state.count
+        count: state.Counter.count
     };
 }
 CountCounter.navigationOptions = {

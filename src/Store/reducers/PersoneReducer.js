@@ -12,12 +12,17 @@ const initialState = {
 
 
 const PersonReducer = (state = initialState, action) => {
+
     switch (action.type) {
         case ADD_PERSON:
             return {
                 Persons: [...state.Persons, action.payload]
             };
-
+        case "DUBLICATE_USER":
+            console.log(state)
+            return {
+                Persons: [...state.Persons, state.Persons[0]]
+            }
         default:
             return state;
     }
