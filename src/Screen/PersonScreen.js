@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { View, Text, Button, TextInput, StyleSheet } from 'react-native'
 import { connect } from "react-redux";
-
 let PersonScreen = (props) => {
     const [person, setPerson] = useState({
         firstName: null,
@@ -20,8 +19,8 @@ let PersonScreen = (props) => {
         <View style={{ flex: 1, flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
             <View style={{ width: "100%" }}>
 
-                <Button onPress={() => alert(JSON.stringify(props.Persons))} title={"Show Redux State of Persons"} />
-                <Text> firstName</Text>
+                <Button onPress={() => props.navigation.navigate("UseSelectorScreen")} color={"red"} title={"Go To UseSelector Screen"} />
+                <Text style={{ marginTop: 15 }}> firstName</Text>
                 <TextInput placeholder={"firstName"} onChangeText={(e) => {
                     setPerson({ ...person, ...{ firstName: e } })
                 }} style={style.TextInput} />

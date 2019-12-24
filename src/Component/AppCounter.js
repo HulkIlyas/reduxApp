@@ -1,11 +1,12 @@
 import { createAppContainer } from "react-navigation"
 import { createStackNavigator } from "react-navigation-stack";
-import { CountCounter, PersonScreen } from "screen";
+import { CountCounter, PersonScreen, UseSelectorScreen } from "screen";
 
 
 const Main = createStackNavigator({
     counter: CountCounter,
-    Person: PersonScreen
+    Person: PersonScreen,
+    UseSelectorScreen
 }, {
     initialRouteName: "counter"
 })
