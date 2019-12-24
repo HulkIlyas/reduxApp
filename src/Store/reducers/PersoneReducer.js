@@ -1,31 +1,25 @@
-
+import { ADD_PERSON } from "Store"
 const initialState = {
-    name: "ilyas ELMOUSAOUY",
-    birthday: new Date("1994/07/13"),
-    location: "Marrakech",
-    job: "Developper",
-    Exprience: "3 Years"
+    Persons: [
+        {
+            firstName: "ilyas",
+            lastName: "ELMOUSAOUY",
+            birthday: new Date("1994/07/13"),
+            Job: "IT Developer"
+        }
+    ]
 };
 
 
-const CounterReducer = (state = initialState, action) => {
+const PersonReducer = (state = initialState, action) => {
     switch (action.type) {
-        case ADD_ONE:
+        case ADD_PERSON:
             return {
-                count: state.count + 1
+                Persons: [...state.Persons, action.payload]
             };
-        case MINUS_ONE:
-            return {
-                count: state.count - 1
-            };
-        case UPDATE_COUNT:
-            console.log(action)
-            return {
 
-                count: action.payload
-            }
         default:
             return state;
     }
 }
-export { CounterReducer };
+export { PersonReducer };
