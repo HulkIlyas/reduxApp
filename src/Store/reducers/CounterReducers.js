@@ -24,4 +24,4 @@ const CounterReducer = (state = initialState, action) => {
             return state;
     }
 }
-export { CounterReducer };
+export { CounterReducer, initialState };

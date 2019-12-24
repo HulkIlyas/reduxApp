@@ -1,8 +1,7 @@
 import React from 'react'
 import { Provider } from "react-redux";
-import {AppCounter} from 'Component'
-import {store} from "Store"
-
+import { store } from "Store"
+import { AppCounter } from 'Component';
 
 
 const App = () => {
