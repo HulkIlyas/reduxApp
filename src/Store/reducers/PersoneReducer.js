@@ -1,4 +1,4 @@
-import { ADD_PERSON } from "Store"
+import { CREATE_PERSON } from "Store"
 const initialState = {
     Persons: [
         {
@@ -14,14 +14,11 @@ const initialState = {
 const PersonReducer = (state = initialState, action) => {
 
     switch (action.type) {
-        case ADD_PERSON:
-            return {
-                Persons: [...state.Persons, action.payload]
-            };
-        case "DUBLICATE_USER":
+
+        case CREATE_PERSON:
             console.log(state)
             return {
-                Persons: [...state.Persons, state.Persons[0]]
+                Persons: [...state.Persons, action.payload]
             }
         default:
             return state;
