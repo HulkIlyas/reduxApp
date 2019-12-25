@@ -15,6 +15,6 @@ run :  **npm install react-redux redux** to install all what you need
 
 3 __UseSelector__ : simple fetching data from state using redux hooks
 
-4 __useDispatch__ : (not done yet) triggering a dispatch action from a compononet
+4 __useDispatch__ : (not done yet) triggering a dispatch action from a component
 
 for more details visit : **https://redux.js.org/basics/basic-tutorial**
