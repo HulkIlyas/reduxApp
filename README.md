@@ -11,7 +11,7 @@ run :  **npm install react-redux redux** to install all what you need
 
 1 __Count__ : here is a simple exemple of manipuler of count state in redux
 
-2 __Person__ : have is somewhere simple  exemple of manipuler of  person object in redux
+2 __Person__ : here is somewhere simple  exemple of  person object state in redux
 
 3 __UseSelector__ : simple fetching data from state using redux hooks
 
